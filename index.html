@@ -1,326 +1,85 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avagado Speech Theraphy Website</title>
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- lightgallery css cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
-    <!-- custom css file link  -->
+    <title>Avagado Initial Assessment</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Assessment</button></div>
 
-    <!-- header section starts -->
-
-    <header class="header">
-
-        <a href="#" class="logo"> <i class="fas fa-school"></i> Avagado</a>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#education">Theraphy</a>
-            <a href="#teacher">Theraphist</a>
-            <a href="#gallery">gallery</a>
-            <a href="#contact">contact</a>
-        </nav>
-        <a href="Sliding-Sign-In-Sign-Up-Form-master/sign in up.html">
-        <div class="icons">
-            <div class="fas fa-user" id="login-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div></a>
-
-
-    </header>
-
-    <!-- header section ends -->
-
-    <!-- home section starts -->
-
-    <section class="home" id="home">
-
-        <div class="content">
-            <h3>welcome to our <span>Avagado Speech Theraphy</span></h3>
-            <p>Unlock Your Voice, Unleash Your Potential: Discover the Power of Speech Therapy Today! </p>
-            <a href="#about" class="btn">learn more</a>
-        </div>
-
-        <div class="image">
-            <img src="avae.jpg" alt="">
-        </div>
-
-        <div class="custom-shape-divider-bottom-1684324473">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
-
-    </section>
-
-    <!-- home section ends -->
-
-    <!-- about us section starts -->
-
-    <section class="about" id="about">
-        <h1 class="Ab"> ABOUT US </h1>
-        <div class="row">
-            <div class="image">
-                <img src="images/about us.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Empowering Communication, Transforming Lives</h3><br>
-                <p>Welcome to Avagado Speech Therapy, a nurturing space dedicated to empowering children's communication skills with the guidance of their parents. </p>
-                <p>At Avagado, we understand the importance of parental involvement in a child's speech therapy journey.</p>
-                <p> Our team of experienced speech therapists specializes in working with children, offering personalized therapy sessions that engage both the child and their parents.</p>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Welcome to Avagado Speech Therapy</span></div>
+        <div class="info-list">
+            <div class="info">
                 
+                Dear Caretaker,
+                Thank you for considering our speech therapy services for your child.
+                 We understand that seeking assistance for speech-related concerns 
+                 can be a significant decision, and we're here to support you every 
+                 step of the way.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit"></a>Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Avagado Asseessment</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
             </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <a href ="avagado\warn.html"><button class="quit">Disorder Info</button></a>
 
         </div>
+    </div>
 
-    </section>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
 
-    <!-- about us section ends -->
-
-    <!-- education section start -->
-
-    <section class="education" id="education">
-
-        <h1 class="heading"> <span> Theraphy</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <a href="#">
-                <h3>Story Telling</h3>
-                <p>Unlocking Speech and Language Skills Through Imagination.</p>
-                <img src="avam (2).jpg" alt="Transparent Image">
-            </div></a>
-
-            <div class="box">
-                <a href="crop.html">
-                <h3>Games</h3>
-                <p>Transforming Speech Therapy into Playful Learning Experiences </p>
-                <img src="avaa (2).jpg" alt="">
-            </div></a>
-
-            <div class="box">
-                <a href="#">
-                <h3>Word play</h3>
-                <p>Fun Exercises for Strengthening Speech Skills!</p>
-                <img src="avak (2).jpg" alt="">
-            </div></a>
-
-           
-
-        </div>
-
-    </section>
-
-    <!-- education section ends -->
-
-    <!-- teacher section starts -->
-
-    <section class="teacher" id="teacher">
-
-        <h1 class="heading">our <span> Therapist</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/teacher1.png" alt="">
-                <h3>Celine</h3>
-                <p>Articulation specialist</p>
-                <div class="share">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/teacher2.png" alt="">
-                <h3>Rose</h3>
-                <p>Speech-Language Pathologist</p>
-                <div class="share">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/teacher3.png" alt="">
-                <h3>Tessa</h3>
-                <p>Child Speech Pathologist</p>
-                <div class="share">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- teacher section ends -->
-
-    <!-- activities section starts -->
-
-   
-    <!-- activities section ends -->
-
-    <!-- gallery section starts -->
-
-    <section class="gallery" id="gallery">
-
-        <h1 class="heading">our <span>gallery</span></h1>
-
-        <div class="gallery-container">
-
-            <a href="images/gallery-1.jpg" class="box">
-                <img src="images/gallery-1.jpg" alt="">
-                <div class="icon"> <i class="fas fa-plus"></i></div>
-            </a>
-
-            <a href="images/gallery-2.jpg" class="box">
-                <img src="images/gallery-2.jpg" alt="">
-                <div class="icon"> <i class="fas fa-plus"></i></div>
-            </a>
-
-            <a href="images/gallery-3.jpg" class="box">
-                <img src="images/gallery-3.jpg" alt="">
-                <div class="icon"> <i class="fas fa-plus"></i></div>
-            </a>
-
-            <a href="images/gallery-4.jpg" class="box">
-                <img src="images/gallery-4.jpg" alt="">
-                <div class="icon"> <i class="fas fa-plus"></i></div>
-            </a>
-
-            <a href="images/gallery-5.jpg" class="box">
-                <img src="images/gallery-5.jpg" alt="">
-                <div class="icon"> <i class="fas fa-plus"></i></div>
-            </a>
-
-            <a href="images/gallery-6.jpg" class="box">
-                <img src="images/gallery-6.jpg" alt="">
-                <div class="icon"> <i class="fas fa-plus"></i></div>
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- gallery section ends -->
-
-    <!-- contact section starts -->
-
-    <section class="contact" id="contact">
-
-        <h1 class="heading"> <span>contact</span> us</h1>
-
-        <div class="icons-container">
-
-            <div class="icons">
-                <i class="fas fa-clock"></i>
-                <h3>opening hours :</h3>
-                <p>mon - thurs: 08:00 am to 12:30 pm</p>
-                <p>friday: 09:00 am to 12:00 pm</p>
-            </div>
-
-            <div class="icons">
-                <i class="fas fa-envelope"></i>
-                <h3>email</h3>
-                <p>avagado@gmail.com</p>
-                <p>avagadspeech@gmail.com</p>
-            </div>
-
-            <div class="icons">
-                <i class="fas fa-phone"></i>
-                <h3>phone number</h3>
-                <p>+91-8490531829</p>
-                <p>+91-6784567890</p>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="image">
-                <img src="images/contact.gif" alt="">
-            </div>
-
-            <form action="contact.php" method="post">
-                <h3>get in touch</h3>
-                <div class="inputBox">
-                    <input type="text" placeholder="your name" name="name" required>
-                    <input type="email" placeholder="your email" name="email" required>
-                </div>
-                <div class="inputBox">
-                    <input type="number" placeholder="your number" name="number" required>
-                    <input type="text" placeholder="your subject" name="subject" required>
-                </div>
-                <textarea placeholder="your message" name="msg" cols="30" rows="10" required></textarea>
-                <button type="submit" class="btn1">SUBMIT</button>
-            </form>
-
-        </div>
-
-    </section>
-
-    <!-- contact section ends -->
-
-    <!-- footer section starts -->
-
-    <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3> <i class="fas fa-school"></i> Avagado </h3>
-                <p>
-                    "Your Journey to Wellness Starts Here - Explore, Engage, Empower!"</p>
-            </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#gallery"> <i class="fas fa-caret-right"></i> enroll now</a>
-                <a href="#contact"> <i class="fas fa-caret-right"></i> parent portal</a>
-                <a href="#teacher"> <i class="fas fa-caret-right"></i> Theraphist tips</a>
-               
-            </div>
-
-            <div class="box">
-                <h3>category</h3>
-                <a href="#about"> <i class="fas fa-caret-right"></i> about us</a>
-                <a href="#contact"> <i class="fas fa-caret-right"></i> news & events</a>
-                <a href="#contact"> <i class="fas fa-caret-right"></i> contact us</a>
-            </div>
-
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="about"> <i class="fas fa-caret-right"></i> privacy policy</a>
-                <a href="about"> <i class="fas fa-caret-right"></i> terms of use</a>
-
-                <a href="contact"> <i class="fas fa-caret-right"></i> FAQs</a>
-        
-            </div>
-        </div>
-    </section>
-    <!-- footer section ends -->
-    <!-- lightgallery cdn js link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-    <!-- custom js file link -->
-    <script src="script.js"></script>
-
-    <script>
-        lightGallery(document.querySelector('.gallery .gallery-container'));
-    </script>
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
