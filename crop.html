@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avagado Speech Theraphy Website</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="crop.css">
+</head>
+<body>
+    
+    <!-- header section starts -->
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-school"></i> Avagado</a>
+
+        <nav class="navbar">
+            <a href="http://localhost:8012/avagado-20240219T093759Z-001/avagado/#teacher">home</a>
+            <a href="#about">about</a>
+            <a href="#education">Theraphy</a>
+            <a href="#teacher">Theraphist</a>
+            <a href="#gallery">gallery</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <a href="Sliding-Sign-In-Sign-Up-Form-master/sign in up.html">
+        <div class="icons">
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div></a>
+    </header>
+    <style>
+        /* Style to display only a specific portion of the embedded webpage */
+        
+        .iframe-container {
+            width: 120%;
+            height: 800px; /* Adjust the height as needed */
+            overflow: hidden;
+            position:relative;
+            padding-right: 100px;
+            padding-top:10%;
+            transform:translateY(-135px); 
+            clip-path: inset(270px 0 0 0);
+            
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100% + 150px); /* Adjust the height as needed */
+            border: none;
+            transform: translateY(-135px); /* Adjust the translation value to display the desired portion */
+            transform:translateY(130px);
+            top: 0;
+            position: absolute;
+            left: 100px;
+            bottom: 0;
+            
+            
+        
+        }
+    </style>
+</head>
+<body>
+    <section class="iframe-container">
+        <iframe src="https://www.turtlediary.com/game/word-building.html" title="Embedded Webpage"></iframe>
+        <!-- Replace "https://www.example.com" with the URL of the webpage you want to embed -->
+    </section>
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-school"></i> Avagado </h3>
+                <p>
+                    "Your Journey to Wellness Starts Here - Explore, Engage, Empower!"</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#gallery"> <i class="fas fa-caret-right"></i> enroll now</a>
+                <a href="#contact"> <i class="fas fa-caret-right"></i> parent portal</a>
+                <a href="#teacher"> <i class="fas fa-caret-right"></i> Theraphist tips</a>
+               
+            </div>
+
+            <div class="box">
+                <h3>category</h3>
+                <a href="#about"> <i class="fas fa-caret-right"></i> about us</a>
+                <a href="#contact"> <i class="fas fa-caret-right"></i> news & events</a>
+                <a href="#contact"> <i class="fas fa-caret-right"></i> contact us</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="about"> <i class="fas fa-caret-right"></i> privacy policy</a>
+                <a href="about"> <i class="fas fa-caret-right"></i> terms of use</a>
+
+                <a href="contact"> <i class="fas fa-caret-right"></i> FAQs</a>
+        
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends -->
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+</body>
+</html>
+
